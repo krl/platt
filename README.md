@@ -6,7 +6,14 @@ Only implements put/fetch and transactions so far.
 
 Uses nippy for serialization and thus supports all datastructure that nippy does.
 
-## Simple key value store
+Any value can be used as a key, including maps and sets.
+
+## Usage
+
+In project.clj, depend on [platt "0.0.1"]
+
+	  (ns platt-test
+  	  (:use [platt.core]))
 
     (def db (open-database "filename"))
     
