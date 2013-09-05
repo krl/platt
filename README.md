@@ -30,9 +30,9 @@ In project.clj, depend on [platt "0.0.1"]
     (with-db db
 		  (put :a 1)
 			(transact
-			  (put :a 2)
-				(put :b 2)
-				(/ 7 0)))
+        (put :a 2)
+        (put :b 2)
+        (/ 7 0)))
     
     (with-db db
 		  (fetch :a)) => 1
