@@ -28,8 +28,8 @@ In project.clj, depend on [platt "0.0.1"]
 ## Transactions
 
     (with-db db
-		  (put :a 1)
-			(transact
+      (put :a 1)
+      (transact
         (put :a 2)
         (put :b 2)
         (/ 7 0)))
